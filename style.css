@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --text-color: white;
+    --bg-url: url(assets/fundo.png);
+ font-family: 'Roboto', sans-serif;
+  
+  }
+  body {
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+    
+  }
+
+   
+  .logo img {
+    height: 250px;
+    margin-left: 45%;
+  }
+
+  .logo h1{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 38px;
+  }
+  .logo p{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .card {
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1x solid rgba(255, 255, 255, 0.5);
+    border-left: 1x solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur (2px) ;
+  }
+
+  .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .content h2 {
+    position: relative;
+    top: -50px;
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+  }
+
+  .content h3 {
+    top: -30px;
+    font-size: 1.2em;
+    color: var(--text-color);
+    z-index: 1;
+  }
+
+  .content p {
+    font-size: 0.7em;
+    color: var(--text-color);
+    font-weight: 300;
+  }
+
+  .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: var(--text-color);
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0.5px 10px rgba(0, 0, 0, 0.1);
+  }
